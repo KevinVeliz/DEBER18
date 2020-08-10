@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-
+//FUNCIONES
 void escribir();
 void leer();
 int menu(int );
@@ -33,6 +33,7 @@ system("clear");
 
 }
 
+//FUNCION MENU
 int menu(int op)
 {
   op= -1;
@@ -53,6 +54,7 @@ int menu(int op)
   return op;
 }
 
+//FUNCION ESCRIBIR
 void escribir()
 {
   ofstream archivoUno;
@@ -86,6 +88,7 @@ void escribir()
   archivoUno.close();
 }
 
+//FUNCION LEER
 void leer()
 {
     ifstream archivoLectura ("hola.txt");
